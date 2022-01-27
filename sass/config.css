@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/***************************
+helper classes
+****************************/
+.list-reset {
+  list-style: none;
+}
+
+.margin-right {
+  margin-right: 1.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=config.css.map */

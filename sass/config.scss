@@ -1,0 +1,29 @@
+$primary-color: #e67e22;
+$background-color: #fdf2e9;
+$darker-shade: #cf711f;
+$text-color: #555555;
+$heading-color: #333333;
+$lighten-grey: #dddddd;
+$cta-color: #45260a;
+$footer-nav-link: #767676;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/***************************
+helper classes
+****************************/
+.list-reset {
+  list-style: none;
+}
+
+.margin-right {
+  margin-right: 1.8rem;
+}
+
+.text-center {
+  text-align: center;
+}

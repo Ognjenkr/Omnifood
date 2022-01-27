@@ -1,0 +1,103 @@
+@import "mixin";
+@import "config";
+@import "header";
+@import "main";
+@import "footer";
+
+/***************************
+global styles
+****************************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1260px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-size: 1.6rem;
+}
+.span-subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: $heading-color;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+h1 {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  @media screen and (max-width: 910px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 4.4rem;
+  }
+}
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: $text-color;
+}
+.btn {
+  color: #fff;
+  background-color: $primary-color;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  @include transition-ease;
+  &:hover {
+    background-color: $darker-shade;
+  }
+}

@@ -1,0 +1,66 @@
+.main-footer {
+  padding: 12.8rem 0;
+  .footer-flex {
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6.4rem;
+    .footer-links {
+      .logo-icon {
+        height: 2.2rem;
+        margin-bottom: 3.2rem;
+      }
+      .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 2.4rem;
+        margin-bottom: auto;
+        .ion-icon {
+          height: 2.4rem;
+          width: 2.4rem;
+          display: inline-block;
+          margin-bottom: 7rem;
+          @include transition-ease;
+          &:hover {
+            color: $heading-color;
+          }
+        }
+      }
+      .copyright {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #767676;
+      }
+      .footer-heading {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+      }
+      p {
+        margin-bottom: 2.4rem;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 1.6;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $footer-nav-link;
+        transition: all 0.3s;
+        display: block;
+        margin-bottom: 1rem;
+        &:hover {
+          color: $text-color;
+        }
+      }
+      .footer-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+      }
+    }
+  }
+}

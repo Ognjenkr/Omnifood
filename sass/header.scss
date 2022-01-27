@@ -1,0 +1,101 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  .logo-icon {
+    height: 2.2rem;
+  }
+  .main-nav {
+    @media screen and (max-width: 910px) {
+      background-color: rgba(255, 255, 255, 0.986);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include transition-ease;
+
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+    ul {
+      @media screen and (max-width: 910px) {
+        position: absolute;
+        flex-direction: column;
+        gap: 4.8rem;
+      }
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+      .main-nav-links {
+        @media screen and (max-width: 910px) {
+          font-size: 3rem;
+        }
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: $heading-color;
+        font-weight: 500;
+        @include transition-ease;
+        &:hover {
+          color: $darker-shade;
+        }
+      }
+      .main-nav-btn {
+        @media screen and (max-width: 910px) {
+          font-size: 3rem;
+        }
+        background-color: $primary-color;
+        padding: 1rem 2.4rem;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 1.8rem;
+        border-radius: 9px;
+        font-weight: 500;
+        @include transition-ease;
+        &:hover {
+          background-color: $darker-shade;
+        }
+      }
+    }
+  }
+}
+.menu-nav {
+  background-color: transparent;
+  border: none;
+  display: none;
+  @media screen and (max-width: 910px) {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: none;
+    @media screen and (max-width: 910px) {
+      display: block;
+    }
+  }
+  .menu-nav-icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: $heading-color;
+  }
+}
+.nav-open .main-nav {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.nav-open .close {
+  display: block;
+}
+.nav-open .open {
+  display: none;
+}
